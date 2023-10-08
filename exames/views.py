@@ -5,7 +5,7 @@ from .models import TiposExames, PedidosExames, SolicitacaoExame
 from django.contrib import messages
 from django.contrib.messages import constants
 from datetime import datetime
-
+# python manage.py runserver (Comando para rodar as app)
 @login_required
 def solicitar_exames(request):
     tipos_exames = TiposExames.objects.all()
